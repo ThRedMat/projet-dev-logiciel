@@ -1,0 +1,26 @@
+﻿<Window x:Class="EffraieTonPote.MainWindow"
+		xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+		xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+		xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+		mc:Ignorable="d"
+		xmlns:local="clr-namespace:EffraieTonPote"
+		Title="Effraie Ton Pote" Height="600" Width="800"
+		Background="Gray"
+		ResizeMode="CanMinimize">
+
+
+    <Grid>
+        <!-- background + boutons -->
+        <TextBlock Name="TextBlock1" Background="LightBlue" Foreground="Black" Margin="0,0,0,-1"/>
+        <Button Name="Play" Content="Clique Moi !" Margin="336,261,336,260" Click="Start"/>
+
+        <!-- balise de texte qui affiche différents information utiles -->
+        <TextBlock Name="TextBlock0" Background="White" Foreground="Black"  Width="150" Height="100" Margin="10,10,640,474" Visibility="Hidden"/>
+
+        <!-- position de l'image -->
+        <Image x:Name="Arrow"  Height="100" Width="100" Visibility="Hidden"/>
+        <Image x:Name="Scary"  Visibility="Hidden"/>
+
+    </Grid>
+</Window>
